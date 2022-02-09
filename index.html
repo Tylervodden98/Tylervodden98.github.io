@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Bootstrap v5 with Sass</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css" class="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Lobster&family=Murecho:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!--NAV BAR SECTION-->
+
+  <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        TVodds
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <a class="rounded-pill btn-rounded text-center text-decoration-none" href="tel:+14166164563">+14166164563
+          <span>
+            <i class="fas fa-phone-alt"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!--INTRO SECTION-->
+  <section id="home" class="intro-section">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- CONTENT FOR INTRODUCTION -->
+        <div class="col-md-6 intros">
+          <h1 class="display-2 mb-4">
+            <span class="display-2--intro">Hey!, I'm Tyler</span>
+            <span class="display-2--description lh-base">Welcome to my Website!</span>
+          </h1>
+          <a href="#contact" class="button rounded-pill btn-rounded text-center text-decoration-none">Contact Me
+            <span>
+              <i class="fas fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+        <!-- START THE CONTENT FOR VIDEO -->
+        <div class="col-md-6 intros text-end">
+          <div class="video-box">
+            <img src="images/Arts/Web development _Monochromatic.png" alt="video png" class="img-fluid">
+            <a href="#" class="glightbox">
+              <span>
+                <i class="fas fa-play-circle"></i>
+              </span>
+              <span class="border-animation border-animation--border-1"></span>
+              <span class="border-animation border-animation--border-2"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,0L48,37.3C96,75,192,149,288,160C384,171,480,117,576,106.7C672,96,768,128,864,160C960,192,1056,224,1152,229.3C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+  </section>
+
+  <script src="/assets/vendors/js/glightbox.min.js"></script>
+
+  <script type="text/javascript">
+    const lightbox = GLightbox({
+      'href':'https://www.youtube.com/watch?v=8G1Ik4RnPyM&t=1s',
+      'type':'video',
+      'source': 'youtube',
+      'width':900,
+      'autoplay':'true',
+    });
+  </script>
+
+  <!-- START SECTION - PORTFOLIO -->
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-3 fw-bold text-capitalize">Latest Work</h1>
+        <div class="heading-line"></div>
+        <p class="lead">
+          Check out all of the latest work i've done below! Always being updated with future projects.
+          <br>
+          
+        </p>
+        
+      </div>
+      <!-- FILTER BUTTONS -->
+      <!-- <div class="row text-center mt-5 mb-4 g-3">
+        <div class="col-md-12">
+          <button class="btn btn-outline-primary" type="button">All</button>
+          <button class="btn btn-outline-primary" type="button">Websites</button>
+          <button class="btn btn-outline-primary" type="button">Design</button>
+          <button class="btn btn-outline-primary" type="button">Mockup</button>
+        </div>
+      </div> -->
+      <!-- PORTFOLIO ITEMS -->
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/delaywatch.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+            <a href="https://github.com/Tylervodden98/DelayWatch" target="_blank">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>DelayWatch: A Transit Delay Service</h4>
+                  <p>Mockup</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+              <img src="images/portfolio/bank.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+              <a href="https://github.com/Tylervodden98/JAVA-PROJECT" target="_blank">
+              <div class="portfolio-info">
+                <div class="caption">
+                  <h4>Banking Application</h4>
+                  <p>Mockup</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="portfolio-box shadow">
+            <img src="images/portfolio/question.png" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+            <div class="portfolio-info">
+              <div class="caption">
+                <h4>Coming Soon...</h4>
+                <p>In the Future</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 mx-auto">
+          <div class="portfolio-box shadow">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8G1Ik4RnPyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          </div>
+        </div>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT ME SECTION-->
+  <section class="aboutme" id="aboutme">
+    <div class="row text-center">
+      <h1 class="display-3 fw-bold">About Me</h1>
+        <div class="border-bot mb-3"></div>
+    </div>
+
+    <div class="container">
+      <div class="row pt-2 pb-2 mt-2 mb-3">
+        <div class="col-md-6">
+          <div class="bg-white p-3 text-center about display-2">
+            <h4 class="text-center">
+              Hi i'm Tyler!
+              Computer Engineering graduate from Ryerson University. From websites to mobile applications, building is what I do.
+            </h4>
+
+            <h4 class="text-center">
+              <br>
+              I'm now seeking a full-time role within the engineering or developer roles where I can meaningfully contribute using my coding and life skills to achieve the companies' goals.
+              <br>
+              <br>
+              Check out my Resume below for more about what my skills include.
+            </h4>
+            
+            <a href="/images/portfolio/Tyler_Vodden_Resume.docx.pdf" download="" class="btn btn-outline-primary">My Resume</a>
+          </div>
+        </div>
+        <div class="col-md-6 border-left">
+          <div class="bg-white p-4 text-center">
+            <img src="/images/Me.jpg" alt="Picofme" width="300" height="400" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER SECTION -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row" id="contact">
+        <!-- START COL 1 PHONE-->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call"  viewBox="0 0 24 24" stroke-width="1"  fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+              <path d="M15 7a2 2 0 0 1 2 2" />
+              <path d="M15 3a6 6 0 0 1 6 6" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="tel:+14166164563" class="contact-box__info--title">4166164563</a>
+            <p class="contact-box__info--subtitle">Get In Touch</p>
+          </div>
+        </div>
+        <!-- START COL 2 EMAIL -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail"  viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <polyline points="3 7 12 13 21 7" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="mailto:vodden98@hotmail.com" class="contact-box__info--title">vodden98@hotmail.com</a>
+            <p class="contact-box__info--subtitle">Email Me</p>
+          </div>
+        </div>
+        <!-- START COL 3 LOCATION -->
+        <div class="col-md-4 col-lg-4 contact-box pt-1 d-md-block d-lg-flex d-flex">
+          <div class="contact-box__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-current-location" viewBox="0 0 24 24" stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="3" />
+              <circle cx="12" cy="12" r="8" />
+              <line x1="12" y1="2" x2="12" y2="4" />
+              <line x1="12" y1="20" x2="12" y2="22" />
+              <line x1="20" y1="12" x2="22" y2="12" />
+              <line x1="2" y1="12" x2="4" y2="12" />
+            </svg>
+          </div>
+          <div class="contact-box__info">
+            <a href="https://goo.gl/maps/HpbBcafBe77vtr7p7" target="_blank" class="contact-box__info--title">Scarborough, Ontario</a>
+            <p class="contact-box__info--subtitle">Toronto</p> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- START SOCIAL MEDIA  -->
+    <div class="footer-sm" style="background-color: #212121;">
+      <div class="container">
+        <div class="row py-4 text-center text-white">
+          <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+            connect with me on social media
+          </div>
+          <div class="col-lg-7 col-md-6">
+            <a href="https://www.facebook.com/bmxrock/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/Tylervodden98" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/tyler-vodden-06708a201/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- START COPYRIGHT INFO -->
+    <div class="footer-bottom pt-5 pb-5">
+      <div class="container">
+        <div class="row text-center text-white">
+          <div class="col-12">
+            <div class="footer-bottom__copyright">
+              &COPY; Copyright 2022 | Created by <a href= "">Tyler Vodden</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a href="" class="shadow btn-primary rounded-circle back-to-top">
+      <i class="fas fa-chevron-up">
+
+      </i>
+    </a>
+  </footer>
+
+  <script>
+    /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

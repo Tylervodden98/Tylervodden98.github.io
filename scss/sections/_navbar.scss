@@ -1,0 +1,32 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.navbar{
+  transition: top 0.3s;
+}
+.menu {
+  @include gradient;
+
+  .navbar-brand{
+    font-family: 'Comforter', cursive;
+    font-size: 2rem;
+  }
+  li {
+    padding: 0 0.7rem;
+
+    a {
+      color: $white !important;
+      text-transform: capitalize;
+      font-weight: 200;
+      font-family: "Murecho", sans-serif;
+      font-size: 1.2rem;
+    }
+    
+  }
+
+  &:hover{
+    
+  }
+}
+
+

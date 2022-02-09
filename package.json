@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Making website w bootstrap v5 sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass":"sass --watch scss:assets/css"
+  },
+  "keywords": [
+    "Bootstrap",
+    "bootstrap-v5",
+    "sass",
+    "learn-bootstrap",
+    "learn-sass"
+  ],
+  "author": "Tyler Vodden",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.45.2"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "autoprefixer": "^10.4.1",
+    "bootstrap": "^5.1.3"
+  }
+}
