@@ -11211,6 +11211,11 @@ textarea.form-control-lg {
   font-family: "Comforter", cursive;
   font-size: 2rem;
 }
+.menu .navbar-brand:hover {
+  color: #adb5bd;
+  font-weight: 400;
+  transition: 0.3s;
+}
 .menu li {
   padding: 0 0.7rem;
 }
@@ -11220,7 +11225,13 @@ textarea.form-control-lg {
   font-weight: 200;
   font-family: "Murecho", sans-serif;
   font-size: 1.2rem;
+  text-decoration: none;
 }
+.menu ul li a:hover {
+  color: #adb5bd !important;
+  font-weight: 400;
+}
+
 .intro-section {
   background: linear-gradient(to right, rgba(48, 93, 199, 0.95), rgba(109, 148, 240, 0.95));
   padding: 10rem 0 0 0;
